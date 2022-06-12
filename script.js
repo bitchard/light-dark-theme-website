@@ -7,20 +7,31 @@ const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 
 
-//Dark or Light Images
+//Dark or Light Iages 
 function imageMode(color) {
-    image1.src = 'img/undraw_proud_coder_${color}.svg';
-    image2.src = 'img/undraw_feeling_proud_${color}.svg';
-    image3.src = 'img/undraw_conceptual_idea_${color}.svg';
+    image1.src = `img/undraw_proud_coder_${color}.svg`;
+    image2.src = `img/undraw_feeling_proud_${color}.svg`;
+    image3.src = `img/undraw_conceptual_idea_${color}.svg`;
+
 }
+
 
 //Dark Mode Styles
 function darkMode() {
     nav.style.backgroundColor ='rgb(0 0 0 / 50%)';
     textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
     toggleIcon.children[0].textContent = 'Dark Mode';
-    toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon' );
-    imageMode(dark);
+    toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
+    imageMode('dark');
+}
+
+//Light Mode Styles
+function lightMode() {
+    nav.style.backgroundColor ='rgb(255 255 255/ 50%)';
+    textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+    toggleIcon.children[0].textContent = 'Light Mode';
+    toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
+    imageMode('light'); 
 }
 
 //Switch theme Dynamically
@@ -30,7 +41,7 @@ function switchTheme(event) {
         darkMode();
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
-        lightMOde();
+        lightMode();
     }
 }
 
