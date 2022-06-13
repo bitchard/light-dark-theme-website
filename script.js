@@ -7,14 +7,12 @@ const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 
 
-//Dark or Light Iages 
+//Dark or Light Images 
 function imageMode(color) {
     image1.src = `img/undraw_proud_coder_${color}.svg`;
     image2.src = `img/undraw_feeling_proud_${color}.svg`;
     image3.src = `img/undraw_conceptual_idea_${color}.svg`;
-
 }
-
 
 //Dark Mode Styles
 function darkMode() {
@@ -37,6 +35,8 @@ function lightMode() {
 //Switch theme Dynamically
 function switchTheme(event) {
     if (event.target.checked) {
+       // console.log(event);
+       console.log(event.target.checked);
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         darkMode();
