@@ -1,5 +1,11 @@
-# light-dark-theme-website
-an example website that shows the  option for light or dark theme with the click of a switch
+# Light-Dark-Theme-Website
+
+**Version 1.0.0**
+
+An example website that shows the option for light or dark theme with the click of a switch. 
+
+On first Glance this may seem like a very simple website that switches from light to dark but upon closer examination you will see how thru the use of JavaScript,  all the indiviual parts of the puzzle are brought together and become one fluid piece. 
+
 
 ![Screenshot (53)](https://user-images.githubusercontent.com/99539947/172842433-08f6f9aa-8580-4952-919d-64040a408e9b.png)
 ![Screenshot (51)](https://user-images.githubusercontent.com/99539947/172842437-13453d49-3588-4e0b-bf26-3bab7ae3ef7f.png)
